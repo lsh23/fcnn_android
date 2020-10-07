@@ -1,0 +1,19 @@
+{
+  "buildFiles": [
+    "/Users/gimgibeom/Library/Android/sdk/ndk/20.0.5594570/build/cmake/android.toolchain.cmake",
+    "/Users/gimgibeom/Documents/se_android/app/src/main/cpp/CMakeLists.txt",
+    "/Users/gimgibeom/Library/Android/sdk/ndk/20.0.5594570/build/cmake/platforms.cmake"
+  ],
+  "cleanCommands": [
+    "/Users/gimgibeom/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/gimgibeom/Documents/se_android/app/.cxx/cmake/release/x86_64\" clean"
+  ],
+  "buildTargetsCommand": "/Users/gimgibeom/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/Users/gimgibeom/Documents/se_android/app/.cxx/cmake/release/x86_64\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "native-lib-Release-x86_64": {
+      "artifactName": "native-lib",
+      "buildCommand": "/Users/gimgibeom/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/gimgibeom/Documents/se_android/app/.cxx/cmake/release/x86_64\" native-lib",
+      "abi": "x86_64",
+      "output": "/Users/gimgibeom/Documents/se_android/app/build/intermediates/cmake/release/obj/x86_64/libnative-lib.so"
+    }
+  }
+}
