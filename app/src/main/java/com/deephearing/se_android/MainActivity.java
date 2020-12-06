@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void initWidget() {
         mIvSetting = findViewById(R.id.iv_setting);
-        mRgItems = findViewById(R.id.rg_audio_items);
+//        mRgItems = findViewById(R.id.rg_audio_items);
         mEtChannelName = findViewById(R.id.et_channel_name);
     }
 
@@ -126,28 +126,28 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        mRgItems.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-                switch (group.getCheckedRadioButtonId()) {
-                    case R.id.rb_a2a:
-                        mAE = AudioEnum.App2App;
-                        break;
-                    case R.id.rb_a2s:
-                        mAE = AudioEnum.App2SDK;
-                        break;
-                    case R.id.rb_s2a:
-                        mAE = AudioEnum.SDK2App;
-                        break;
-                    case R.id.rb_s2s:
-                        mAE = AudioEnum.SDK2SDK;
-                        break;
-                    default:
-                        Log.e(TAG, "error on registerListener");
-                }
-                ToastUtils.show(new WeakReference<Context>(MainActivity.this), "chose:" + mAE.toString());
-            }
-        });
+//        mRgItems.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+//            @Override
+//            public void onCheckedChanged(RadioGroup group, int checkedId) {
+//                switch (group.getCheckedRadioButtonId()) {
+//                    case R.id.rb_a2a:
+//                        mAE = AudioEnum.App2App;
+//                        break;
+//                    case R.id.rb_a2s:
+//                        mAE = AudioEnum.App2SDK;
+//                        break;
+//                    case R.id.rb_s2a:
+//                        mAE = AudioEnum.SDK2App;
+//                        break;
+//                    case R.id.rb_s2s:
+//                        mAE = AudioEnum.SDK2SDK;
+//                        break;
+//                    default:
+//                        Log.e(TAG, "error on registerListener");
+//                }
+//                ToastUtils.show(new WeakReference<Context>(MainActivity.this), "chose:" + mAE.toString());
+//            }
+//        });
 
         mEtChannelName.addTextChangedListener(new TextWatcher() {
             @Override

@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#DCE6E4">
+    android:background="@drawable/backgroundimage">
 
     <TextView
         android:id="@+id/tv_channel_room"
@@ -15,12 +15,24 @@
         android:gravity="center_horizontal"
         android:textSize="18sp" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Clear Voice"
+        android:textAlignment="center"
+        android:textColor="#9F9D9D"
+        android:textSize="30dp" />
+
     <ScrollView
         android:id="@+id/sv_display"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/ll_bottom"
-        android:layout_below="@id/tv_channel_room">
+        android:layout_height="0dp"
+        android:layout_below="@id/tv_channel_room"
+        android:layout_marginTop="14dp">
 
         <TextView
             android:id="@+id/tv_info_display"
@@ -30,6 +42,33 @@
             android:textSize="12sp" />
     </ScrollView>
 
+    <ImageButton
+        android:id="@+id/iv_inference"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/sv_display"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1"
+        android:layout_marginTop="170dp"
+        android:background="#00FFFFFF"
+        android:onClick="onInferenceClick"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/logo4" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_above="@+id/ll_bottom"
+        android:layout_below="@+id/iv_inference"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:lines="2"
+        android:text="Start \nSpeech Enhancement"
+        android:textAlignment="center"
+        android:textSize="30sp" />
 
     <LinearLayout
         android:id="@+id/ll_bottom"
@@ -55,17 +94,6 @@
             android:layout_weight="1"
             android:onClick="onHungUpClick"
             android:src="@drawable/btn_hungup" />
-
-
-        <ImageButton
-            android:id="@+id/iv_inference"
-            android:layout_width="0dp"
-            android:layout_height="48dp"
-            android:layout_weight="1"
-            android:background="#00FFFFFF"
-            android:onClick="onInferenceClick"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/dh_icon_fin" />
 
         <ImageView
             android:id="@+id/iv_speaker"

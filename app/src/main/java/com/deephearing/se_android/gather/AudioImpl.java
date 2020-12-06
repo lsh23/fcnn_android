@@ -28,7 +28,7 @@ public class AudioImpl implements IAudioController {
             // Double the size for much safer
 //            sizeInBytes = AudioRecord.getMinBufferSize(samplingRate, val, AudioFormat.ENCODING_PCM_16BIT);
 
-            sizeInBytes = 128;
+            sizeInBytes = 896;
 
             if (mAudioRecorder != null) {
                 mAudioRecorder.release();
