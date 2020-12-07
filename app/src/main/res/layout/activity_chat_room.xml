@@ -67,7 +67,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
         android:lines="2"
-        android:text="Start \nSpeech Enhancement"
+        android:text="OFF \nSpeech Enhancement"
         android:textAlignment="center"
         android:textSize="30sp" />
 

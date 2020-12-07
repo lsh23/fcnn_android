@@ -304,9 +304,13 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
             }
             boolean b = ((boolean) v.getTag());
             if (b) {
+                TextView textView = (TextView) findViewById(R.id.textView2);
+                textView.setText("ON\nSpeech Enhancement");
                 vi.setColorFilter(getResources().getColor(R.color.agora_blue), PorterDuff.Mode.MULTIPLY);
                 isActivated = true;
             } else {
+                TextView textView = (TextView) findViewById(R.id.textView2);
+                textView.setText("OFF\nSpeech Enhancement");
                 vi.setColorFilter(Color.parseColor("#DDDEEC"), PorterDuff.Mode.MULTIPLY);
                 isActivated = false;
             }
