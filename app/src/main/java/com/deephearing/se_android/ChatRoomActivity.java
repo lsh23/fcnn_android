@@ -3,6 +3,7 @@ package com.deephearing.se_android;
 import android.content.Intent;
 import android.content.res.AssetFileDescriptor;
 import android.content.res.AssetManager;
+import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.media.AudioFormat;
 import android.media.AudioManager;
@@ -265,7 +266,7 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
                 vi.setColorFilter(getResources().getColor(R.color.colorPrimary), PorterDuff.Mode.MULTIPLY);
                 mRtcEngine.muteLocalAudioStream(true);
             } else {
-                vi.setColorFilter(getResources().getColor(R.color.agora_blue), PorterDuff.Mode.MULTIPLY);
+                vi.setColorFilter(Color.parseColor("#B5B3DC"), PorterDuff.Mode.MULTIPLY);
                 mRtcEngine.muteLocalAudioStream(false);
             }
             v.setTag(!b);
@@ -288,7 +289,7 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
                 vi.setColorFilter(getResources().getColor(R.color.colorPrimary), PorterDuff.Mode.MULTIPLY);
                 mRtcEngine.setEnableSpeakerphone(true);
             } else {
-                vi.setColorFilter(getResources().getColor(R.color.agora_blue), PorterDuff.Mode.MULTIPLY);
+                vi.setColorFilter(Color.parseColor("#B5B3DC"), PorterDuff.Mode.MULTIPLY);
                 mRtcEngine.setEnableSpeakerphone(false);
             }
             v.setTag(!b);
@@ -306,7 +307,7 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
                 vi.setColorFilter(getResources().getColor(R.color.agora_blue), PorterDuff.Mode.MULTIPLY);
                 isActivated = true;
             } else {
-                vi.setColorFilter(getResources().getColor(R.color.off), PorterDuff.Mode.MULTIPLY);
+                vi.setColorFilter(Color.parseColor("#DDDEEC"), PorterDuff.Mode.MULTIPLY);
                 isActivated = false;
             }
             v.setTag(!b);

@@ -48,11 +48,12 @@
         android:layout_height="200dp"
         android:layout_below="@+id/sv_display"
         android:layout_centerHorizontal="true"
-        android:layout_weight="1"
         android:layout_marginTop="170dp"
+        android:layout_weight="1"
         android:background="#00FFFFFF"
         android:onClick="onInferenceClick"
         android:scaleType="fitCenter"
+        android:tint="#DDDEEC"
         app:srcCompat="@drawable/logo4" />
 
 
@@ -84,7 +85,8 @@
             android:layout_height="@dimen/iv_chat_room_size"
             android:layout_weight="1"
             android:onClick="onMuteClick"
-            android:src="@drawable/btn_mute" />
+            android:src="@drawable/btn_mute"
+            android:tint="#B5B3DC" />
 
 
         <ImageView
@@ -101,6 +103,7 @@
             android:layout_height="@dimen/iv_chat_room_size"
             android:layout_weight="1"
             android:onClick="onEarPhone"
-            android:src="@drawable/btn_earphone" />
+            android:src="@drawable/btn_earphone"
+            android:tint="#B5B3DC" />
     </LinearLayout>
 </RelativeLayout>
